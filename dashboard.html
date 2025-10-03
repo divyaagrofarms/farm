@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piggery Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>🐖 Piggery Farm</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Farm Dashboard</h2>
+    <section class="dashboard">
+      <div class="herd">
+        <h3>Herd</h3>
+        <p id="pig-count">Total pigs: 0</p>
+        <div id="pig-list" class="pig-list"></div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Add a Pig</h3>
+        <form id="pig-form">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="number" name="age" placeholder="Age (months)">
+          <input type="number" name="weight" placeholder="Weight (kg)">
+          <button type="submit" class="btn">Add Pig</button>
+        </form>
+
+        <h3>Feed Calculator</h3>
+        <p id="feed-display">0 kg per day</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Piggery Farm. Built with care.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
